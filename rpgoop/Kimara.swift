@@ -20,10 +20,10 @@ class Kimara : Enemy {
         return "Kimara"
     }
     
-    override func attemtAttack (attackPwr: Int) -> Bool {
+    override func attemptAttack (attackPwr: Int) -> Bool {
         if attackPwr >= IMMUNE_MAX {
             
-            return super.attemtAttack(attackPwr)
+            return super.attemptAttack(attackPwr)
 
         } else {
             
