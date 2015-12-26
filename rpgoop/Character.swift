@@ -34,10 +34,8 @@ class Character {
         }
     }
     
-    
-    
-    init (startingHP: Int, attackPwr: Int) {
-        self._hp = startingHP
+    init (startingHp: Int, attackPwr: Int) {
+        self._hp = startingHp
         self._attackPwr = attackPwr
     }
     

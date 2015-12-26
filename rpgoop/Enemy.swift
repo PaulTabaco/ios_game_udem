@@ -20,9 +20,7 @@ class Enemy: Character {
     
     func droopLoot() -> String? {
         if !isAlive {
-            // Random Int
-            //let rand = Int (arc4random_buf(<#T##UnsafeMutablePointer<Void>#>, loot.count) )
-            let rand = 1
+            let rand = Int (arc4random_uniform(UInt32(loot.count)))
             return loot[rand]
         }
         return nil
